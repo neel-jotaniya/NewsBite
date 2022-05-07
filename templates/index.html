@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- 
+     
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2ZDM0PWW8W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2ZDM0PWW8W');
+</script>
+     -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NewsBite - Have A Bite Of Daily News</title>
   </head>
+  <link rel="icon" type="image/x-icon" href="https://res.cloudinary.com/dzf5noyqz/image/upload/v1651941941/NewsBite/logo_black_zm4jsa.png" />
   <link
     rel="stylesheet"
     href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -21,7 +33,10 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="/">NEWSBITE</a>
+          <a class="navbar-brand" href="/">
+            <img src="https://res.cloudinary.com/dzf5noyqz/image/upload/v1651941941/NewsBite/logo_white_qvmyio.png" width="30" height="30" class="d-inline-block align-top" alt="">
+             <span class="logoTitle">NEWSBITE</span>
+          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -63,9 +78,6 @@
               <li class="nav-item">
                 <a class="nav-link" href="/top_news/Business">Business</a>
               </li>
-              <!-- <li class="nav-item">
-                <button class="btn btn-light mb-lg-0">Feedback</button>
-              </li> -->
             </ul>
             <form class="d-flex" action="/" method="POST">
               <input
@@ -89,25 +101,17 @@
           {% for news in all_news %}
           <div class="card">
             <div class="thumbnail">
-              <img
-              src="{{news['urlToImage']}}"
-              alt=""
-              srcset=""
-            />
+              <img src="{{news['urlToImage']}}" alt="" srcset="" />
             </div>
             <div class="details">
               <div class="title">
-                <p>
-                  {{news["title"]}}
-                </p>
+                <p>{{news["title"]}}</p>
               </div>
               <div class="date">
                 <p>{{news['publishedAt']}}</p>
               </div>
               <div class="desc">
-                <p>
-                  {{news["description"]}}
-                </p>
+                <p>{{news["description"]}}</p>
               </div>
               <div class="readMore">
                 <a target="_blank" href="{{news['url']}}">Read More</a>

@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,700&family=Roboto+Flex:opsz@8..144&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 :root {
   --primary-color: #212529;
 }
 * {
-  font-family: 'Roboto Flex', sans-serif;
+  font-family: 'Poppins', sans-serif;
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
@@ -17,7 +17,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90%;
+  width: 78%;
   flex-direction: column;
   margin: 25px 0px;
 }
@@ -38,7 +38,6 @@
   border-radius: 6px;
 }
 .title {
-  font-family: 'Roboto Condensed', sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   font-size: 17px;
@@ -82,6 +81,12 @@ p {
   border: 2px solid var(--primary-color);
   color: var(--primary-color);
 }
+.suggest
+{
+  display: flex;
+  justify-content: center;
+  margin: 15px 0px;
+}
 footer {
   padding: 16px;
   background-color: var(--primary-color);
@@ -99,11 +104,56 @@ footer {
   margin-left: 6px;
   margin-right: 12px;
 }
+.developers
+{
+  margin: 20px auto;
+  border: 2px solid rgba(0, 0, 0, 0.356);
+  border-radius: 6px;
+  width: 78%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+}
+.intro
+{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+h5{
+  border-bottom: 2px solid var(--primary-color);
+}
+.socialLinks
+{
+  color: #111827;
+  display: flex;
+  justify-content: center;
+}
+.socialLinks a{
+  padding: 10px 10px;
+}
+.front, .back
+{
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 14px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+
+}
 @media only screen and (max-width: 800px) {
   .card {
     flex-direction: column;
     justify-content: center;
-    width: 90%;
+    width: 100%;
+  }
+  .cardView
+  {
+    width: 98%;
   }
   .submitBtn {
     margin: 12px 0px;
@@ -138,6 +188,23 @@ footer {
     font-size: 13px;
     letter-spacing: 1.2px;
   }
+  .intro
+{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-evenly;
+  /* margin: 20px; */
+}
+.front, .back
+{
+  font-size: 13px;
+  padding: 14px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  margin-bottom: 15px;
+  text-align: center;
+}
 }
 @media only screen and (max-width: 1200px) {
   .card {

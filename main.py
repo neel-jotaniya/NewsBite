@@ -5,13 +5,9 @@ from flask import request,render_template,Flask, url_for
 app = Flask(__name__)
 
 
-api_key_list = ["90cdd48823dd4508943512eca03110ec","e9980fbb7ab142e092b142fdcab23862"]
+api_key_list = ["90cdd48823dd4508943512eca03110ec","e9980fbb7ab142e092b142fdcab23862","815d66c4b58e45b98df3886adfb1fc35"]
 
-for api in api_key_list:         
-     api_link = f"https://newsapi.org/v2/top-headlines?country=in&pageSize=100&apiKey={api}"
-     r = requests.get(api_link)
-     if r.status_code == 200:
-          break
+
      
      
 def data_modifier(article_list):
